@@ -201,8 +201,26 @@ for(i = 0; i < nombres.length; i++){
 
 Otra forma de recorrer los arreglos seria:
 
-
+```javascript
+document.write('<h3>Con forEach</h3>');
+nombres.forEach(function(nombre){
+    document.write(nombre + '<br/>')
+});
+```
 
 <p align="center">
   <img src="images/11.png">
+</p>
+
+Última forma de recorrer los arreglos:
+
+```javascript
+document.write('<h3>Con flecha => </h3>');
+nombres.forEach((nombre) => {
+    document.write(nombre + '<br/>')
+});
+```
+
+<p align="center">
+  <img src="images/12.png">
 </p>
