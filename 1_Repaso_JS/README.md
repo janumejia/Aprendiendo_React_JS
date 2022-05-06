@@ -21,11 +21,11 @@ Para ejecutar código de JavaScript necesitamos una archivo de HTML:
 ```
 
 <p align="center">
-  <img src="../images/1.png">
+  <img src="images/1.png">
 </p>
 
 <p align="center">
-  <img src="../images/2.png">
+  <img src="images/2.png">
 </p>
 
 - o referenciamos el archivo de JavaScript que queremos usar:
@@ -69,7 +69,7 @@ document.write(concatenacion); //La concatenación de lo anterior
 ```
 
 <p align="center">
-  <img src="../images/3.png">
+  <img src="images/3.png">
 </p>
 
 Pero una mejor forma de introducir cosas de JavaScript en el HTML sería agregando en el HTML un div con un id:
@@ -96,7 +96,7 @@ datos.innerHTML = concatenacion;
 ```
 
 <p align="center">
-  <img src="../images/4.png">
+  <img src="images/4.png">
 </p>
 
 La otra forma que tenemos (usando el div y el id) que nos permite agregar HTML dinámicamente seria:
@@ -111,7 +111,7 @@ datos2.innerHTML = `
 ```
 
 <p align="center">
-  <img src="../images/5.png">
+  <img src="images/5.png">
 </p>
 
 Un condicional que toma como criterio la edad sería:
@@ -126,7 +126,7 @@ if(altura >= 190){
 ```
 
 <p align="center">
-  <img src="../images/6.png">
+  <img src="images/6.png">
 </p>
 
 Un FOR normal para imprimir los números del 0 al 10 seria:
@@ -139,7 +139,7 @@ for(var i = 0; i <= 10; i++){
 ```
 
 <p align="center">
-  <img src="../images/7.png">
+  <img src="images/7.png">
 </p>
 
 
@@ -157,7 +157,7 @@ muestraLaDescripcion("Recordando conceptos de JavaScript");
 ```
 
 <p align="center">
-  <img src="../images/8.png">
+  <img src="images/8.png">
 </p>
 
 Función que llama a otra función:
@@ -181,7 +181,7 @@ imprimir();
 ```
 
 <p align="center">
-  <img src="../images/9.png">
+  <img src="images/9.png">
 </p>
 
 Arreglos:
@@ -196,7 +196,7 @@ for(i = 0; i < nombres.length; i++){
 ```
 
 <p align="center">
-  <img src="../images/10.png">
+  <img src="images/10.png">
 </p>
 
 Otra forma de recorrer los arreglos seria:
@@ -204,5 +204,5 @@ Otra forma de recorrer los arreglos seria:
 
 
 <p align="center">
-  <img src="../images/11.png">
+  <img src="images/11.png">
 </p>
