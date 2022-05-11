@@ -1,7 +1,7 @@
 # Repaso de JavaScript 🖥️🧠
 
 Para ejecutar código de JavaScript necesitamos una archivo de HTML:
-1️ Podemos escribir el código de JavaScript en el mismo archivo HTML 1️
+1️⃣ Podemos escribir el código de JavaScript en el mismo archivo HTML
 
 ```html
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ Para ejecutar código de JavaScript necesitamos una archivo de HTML:
   <img src="images/2.png">
 </p>
 
-- o referenciamos el archivo de JavaScript que queremos usar:
+2️⃣ o referenciamos el archivo de JavaScript que queremos usar:
 
 ```html
 <!DOCTYPE html>
@@ -58,9 +58,18 @@ Y funciona igual... <br />
 Para crear variables en js seria:
 
 ```javascript
+// Forma tradicional: var
 var nombre = "Julian Andres Núñez";
 var altura = 170;
 var concatenacion = nombre + " " + altura;
+
+// Mejor forma: let (Si es creado adentro de un método, su valor no se conserva por fuera de este
+//  contrario a var, que al ser creada en un método su valor se conserva por fuera)
+let tareaCompletada = false;
+
+// Creación de una constante: const (Su valor no puede ser cambiado)
+const key = "m7XHMO4BF0";
+
 ```
 
 Para imprimir en la parte superior de la página HTML sería:
