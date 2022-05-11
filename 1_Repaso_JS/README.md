@@ -1,7 +1,7 @@
 # Repaso de JavaScript 🖥️🧠
 
 Para ejecutar código de JavaScript necesitamos una archivo de HTML:
-- Podemos escribir el código de JavaScript en el mismo archivo HTML
+1️ Podemos escribir el código de JavaScript en el mismo archivo HTML
 
 ```html
 <!DOCTYPE html>
