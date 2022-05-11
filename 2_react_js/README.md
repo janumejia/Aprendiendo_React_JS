@@ -31,7 +31,7 @@ Ejecutamos el servidor de desarrollo:
 npm start
 ```
 
-Podemos consultar en (http://localhost:3000/)[http://localhost:3000/] la página por defecto de React JS.
+Podemos consultar en [http://localhost:3000/](http://localhost:3000/) la página por defecto de React JS.
 
 <p align="center">
   <img src="imagenes_readme/2.png">
@@ -183,7 +183,7 @@ Vamos a crear el componente lista en **TodoList.jsx**. Para ahorrarnos código p
   <img src="imagenes_readme/11.png">
 </p>
 
-Le quitamos el default que tiene la función, y lo dejamos de la siguiente manera:
+Le quitamos el default que tiene la función, y dejamos el archivo **TodoList.jsx** de la siguiente manera:
 
 ```javascript
 import React from 'react';
