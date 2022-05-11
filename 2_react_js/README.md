@@ -183,7 +183,7 @@ Vamos a crear el componente lista en **TodoList.jsx**. Para ahorrarnos código p
   <img src="imagenes_readme/11.png">
 </p>
 
-Le quitamos el default que tiene la función, y lo dejamos de la siguiente manera:
+Le quitamos el default que tiene la función, y dejamos el archivo **TodoList.jsx* de la siguiente manera:
 
 ```javascript
 import React from 'react';
