@@ -31,7 +31,7 @@ Ejecutamos el servidor de desarrollo:
 npm start
 ```
 
-Podemos consultar en (http://localhost:3000/)[http://localhost:3000/] la página por defecto de React JS.
+Podemos consultar en [http://localhost:3000/](http://localhost:3000/) la página por defecto de React JS.
 
 <p align="center">
   <img src="imagenes_readme/2.png">
