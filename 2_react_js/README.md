@@ -164,6 +164,35 @@ Lo que nos arroja el mismo **Hola mundo!!!**:
   <img src="imagenes_readme/9.png">
 </p>
 
+### Conceptos en React JS
+
+#### Props : pasar datos a componentes 📦🚚
+
+Las Props tienen la función de pasar los datos de un componente a otro, ofreciendo así un canal por medio del cual los componentes se puede comunicar.
+
+Formas de usar una **Prop** en una componente llamada Title:
+
+```javascript
+// Forma #1
+const Title = (props) => {
+  return <h1>{props.course}</h1>
+}
+
+// Forma #2
+const Title = (props) => {
+  const {course} = props
+  return <h1>{course}</h1>
+}
+
+// Forma #3
+const Title = ({course}) => {
+  return <h1>{course}</h1>
+}
+
+// Forma #4 (One Liner)
+const Title = ({course}) => <h1>{course}</h1>
+```
+
 ## Creación de una lista de tareas
 
 Este ejemplo nos permitirá crear y eliminar tareas de una lista. Una vez creamos la tarea con un nombre dado, podemos marcarla como completada y viceversa. Las tareas que están completadas pueden ser borradas con un solo botón. También nos indica el número de tareas que faltan por completar:
