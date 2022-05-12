@@ -1,4 +1,4 @@
-# Aprendiendo React JS
+# Aprendiendo React JS ⚛️
 
 Primero, debemos tener instalado node. Lo comprobamos con:
 
