@@ -25,6 +25,10 @@ Además, nos crea varios directorios y archivos:
   <img src="imagenes_readme/1-2.png">
 </p>
 
+- El directorio **public** es para poner los archivos estaticos de la página, como imágenes, etc.
+- En **src** está el código fuente de la página.
+  - En **App.css** estan los estilos de la App.
+
 Ejecutamos el servidor de desarrollo:
 
 ```
