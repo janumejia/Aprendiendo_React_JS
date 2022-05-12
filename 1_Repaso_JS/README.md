@@ -171,7 +171,7 @@ for(var i = 0; i <= 10; i++){
 </p>
 
 
-Para crear una función (muy común en React JS) sería:
+Para crear una función de la forma común en React JS (**Function expressions**) sería:
 
 ```javascript
 const sumar = (operando1, operando2) => {
@@ -187,7 +187,7 @@ console.log(sumar(1,2))
 // 3
 ```
 
-Otra forma de crear una función en el archivo main.js:
+Otra forma de crear una función (**Function Declaration**) en el archivo main.js:
 
 ```javascript
 function muestraLaDescripcion(descripcion){
