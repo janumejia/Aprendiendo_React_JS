@@ -71,6 +71,19 @@ let tareaCompletada = false;
 // Creación de una constante: const (Su valor no puede ser cambiado)
 const key = "m7XHMO4BF0";
 
+//Objetos y arreglos
+const persona = {
+    name: 'Miguel',
+    twitter: '@midudev',
+    age: 18,
+    isDeveloper: true,
+    links: ['https://midu.tube/','https://midu.live/']
+}
+```
+Para imprimir por consola sería:
+```javascript
+console.log(persona.name);
+console.log(persona.links[0]);
 ```
 
 Para imprimir en la parte superior de la página HTML sería:
