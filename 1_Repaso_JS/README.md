@@ -171,7 +171,23 @@ for(var i = 0; i <= 10; i++){
 </p>
 
 
-Para crear una función, en el archivo main.js ponemos:
+Para crear una función (muy común en React JS) sería:
+
+```javascript
+const sumar = (operando1, operando2) => {
+    console.log(operando1)
+    console.log(operando2)
+    return operando1 + operando2
+}
+
+console.log(sumar(1,2))
+// Consola:
+// 1
+// 2
+// 3
+```
+
+Otra forma de crear una función en el archivo main.js:
 
 ```javascript
 function muestraLaDescripcion(descripcion){
