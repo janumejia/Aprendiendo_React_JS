@@ -84,6 +84,9 @@ Para imprimir por consola sería:
 ```javascript
 console.log(persona.name);
 console.log(persona.links[0]);
+
+const field = 'name';
+console.log(persona[field]);
 ```
 
 Para imprimir en la parte superior de la página HTML sería:
