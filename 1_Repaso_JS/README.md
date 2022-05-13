@@ -1,7 +1,8 @@
 # Repaso de JavaScript 🖥️🧠
 
 Para ejecutar código de JavaScript necesitamos una archivo de HTML:
-- Podemos escribir el código de JavaScript en el mismo archivo HTML
+
+1️⃣ Podemos escribir el código de JavaScript en el mismo archivo HTML
 
 ```html
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ Para ejecutar código de JavaScript necesitamos una archivo de HTML:
   <img src="images/2.png">
 </p>
 
-- o referenciamos el archivo de JavaScript que queremos usar:
+2️⃣ o referenciamos el archivo de JavaScript que queremos usar:
 
 ```html
 <!DOCTYPE html>
@@ -58,9 +59,34 @@ Y funciona igual... <br />
 Para crear variables en js seria:
 
 ```javascript
+// Forma tradicional: var
 var nombre = "Julian Andres Núñez";
 var altura = 170;
 var concatenacion = nombre + " " + altura;
+
+// Mejor forma: let (Si es creado adentro de un método, su valor no se conserva por fuera de este
+//  contrario a var, que al ser creada en un método su valor se conserva por fuera)
+let tareaCompletada = false;
+
+// Creación de una constante: const (Su valor no puede ser cambiado)
+const key = "m7XHMO4BF0";
+
+//Objetos y arreglos
+const persona = {
+    name: 'Miguel',
+    twitter: '@midudev',
+    age: 18,
+    isDeveloper: true,
+    links: ['https://midu.tube/','https://midu.live/']
+}
+```
+Para imprimir por consola sería:
+```javascript
+console.log(persona.name);
+console.log(persona.links[0]);
+
+const field = 'name';
+console.log(persona[field]); // Igual que console.log(persona.name);
 ```
 
 Para imprimir en la parte superior de la página HTML sería:
@@ -145,7 +171,23 @@ for(var i = 0; i <= 10; i++){
 </p>
 
 
-Para crear una función, en el archivo main.js ponemos:
+Para crear una función de la forma común en React JS (**Function expressions**) sería:
+
+```javascript
+const sumar = (operando1, operando2) => {
+    console.log(operando1)
+    console.log(operando2)
+    return operando1 + operando2
+}
+
+console.log(sumar(1,2))
+// Consola:
+// 1
+// 2
+// 3
+```
+
+Otra forma de crear una función (**Function Declaration**) en el archivo main.js:
 
 ```javascript
 function muestraLaDescripcion(descripcion){

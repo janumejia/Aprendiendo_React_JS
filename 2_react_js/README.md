@@ -1,4 +1,4 @@
-# Aprendiendo React JS
+# Aprendiendo React JS ⚛️
 
 Primero, debemos tener instalado node. Lo comprobamos con:
 
@@ -24,6 +24,10 @@ Además, nos crea varios directorios y archivos:
 <p align="center">
   <img src="imagenes_readme/1-2.png">
 </p>
+
+- El directorio **public** es para poner los archivos estaticos de la página, como imágenes, etc.
+- En **src** está el código fuente de la página.
+  - En **App.css** estan los estilos de la App.
 
 Ejecutamos el servidor de desarrollo:
 
@@ -159,6 +163,35 @@ Lo que nos arroja el mismo **Hola mundo!!!**:
 <p align="center">
   <img src="imagenes_readme/9.png">
 </p>
+
+### Conceptos en React JS
+
+#### Props : pasar datos a componentes 📦🚚
+
+Las Props tienen la función de pasar los datos de un componente a otro, ofreciendo así un canal por medio del cual los componentes se puede comunicar.
+
+Formas de usar una **Prop** en una componente llamada Title:
+
+```javascript
+// Forma #1
+const Title = (props) => {
+  return <h1>{props.course}</h1>
+}
+
+// Forma #2
+const Title = (props) => {
+  const {course} = props
+  return <h1>{course}</h1>
+}
+
+// Forma #3
+const Title = ({course}) => {
+  return <h1>{course}</h1>
+}
+
+// Forma #4 (One Liner)
+const Title = ({course}) => <h1>{course}</h1>
+```
 
 ## Creación de una lista de tareas
 
