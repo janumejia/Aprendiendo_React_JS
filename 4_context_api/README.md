@@ -30,8 +30,8 @@ export const DataProvider = ({ children }) => {
     const [data, setData] = useState(dataFixed)
 
     return (
-        /* Aquí usamos el provider de nuestro Context (DataContext), y le pasamos un objeto con las variables que queremos globalizar 
-        mediante la propiedad "value" (tener en cuenta que tiene doble llave porque es un objeto)
+        /* Aquí usamos el provider de nuestro Context (DataContext), y le pasamos un objeto con las variables que queremos 
+        globalizar mediante la propiedad "value" (tener en cuenta que tiene doble llave porque es un objeto)
       
         Para usar esas variables globales desde una componente hija, debemos usar useContext() 
         */
@@ -73,7 +73,7 @@ export default App;
 
 Y para usarlo en las componentes hijas, solamente debemos usar ***useContext(DataContext)*** (DataContext es el nombre del context creado previamente), y traemos los datos que nos interesan. Ejemplo:
 
-´´´javascript
+```javascript
 import React, { useContext } from 'react'
 import { DataContext } from '../context/DataProvider'
 
@@ -93,4 +93,4 @@ export const Pagina1 = () => {
         </div>
     )
 }
-´´´
+```
