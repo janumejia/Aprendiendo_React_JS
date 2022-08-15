@@ -1,6 +1,6 @@
 # Ejemplo de Context API del video: [https://youtu.be/UPCOJgLlr3w](https://youtu.be/UPCOJgLlr3w)
 
-En este mini-proyecto se hace uso de context API para pasar 2 variables a sus componentes hijas.
+En este mini-proyecto se hace uso de **context API** para pasar 2 variables a sus componentes hijas y actualizar los datos de estas **sin necesidad de pasar esas variables como props**.
 
 ## Demo del proyecto:
 ![2022-08-15_13-27-15](https://user-images.githubusercontent.com/60657504/184694842-df9dd2e2-06f6-4024-93bf-754ad8bdc6f2.gif)
