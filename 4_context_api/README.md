@@ -8,7 +8,7 @@
 Context API de React es una forma de crear variables globales que podrás compartir fácilmente con otros componentes de tu aplicación.
 
 <p align="center">
-    ![context-api](https://user-images.githubusercontent.com/60657504/184695102-dee3a940-626f-4c83-bc58-101bf21f1eb6.png)
+    <img src="https://user-images.githubusercontent.com/60657504/184695102-dee3a940-626f-4c83-bc58-101bf21f1eb6.png" />
 </p>
 
 Ejemplo de su uso:
