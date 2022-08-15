@@ -17,7 +17,7 @@ Ejemplo de su uso:
 
 Para usarlo necesitamos usar ***React.createContext()*** , este retorna un consumer y un provider. Ejemplo de una componente en React que crea el context y provee las variables globales *data* y *setData*:
 
-```javascript
+```jsx
 // DataProvider.jsx
 import React, { createContext, useState } from 'react'
 
@@ -52,7 +52,7 @@ export const DataProvider = ({ children }) => {
 
 El context debe ir en una componente que va a proveer estas variables globales a todos los hijos, y por lo general, esta componente se encuentra en la parte más alta de la aplicación (App.js, o index.js). En este caso, se adicionó en App.js:
 
-```javascript
+```jsx
 // App.js
 import React from "react";
 
@@ -79,7 +79,7 @@ export default App;
 
 Y para usarlo en las componentes hijas, solamente debemos usar ***useContext(DataContext)*** (DataContext es el nombre del context creado previamente), y traemos los datos que nos interesan. Ejemplo:
 
-```javascript
+```jsx
 // Pagina1.jsx
 import React, { useContext } from 'react'
 import { DataContext } from '../context/DataProvider'
