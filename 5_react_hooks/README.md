@@ -63,7 +63,7 @@ export default function App() {
 
 ## useContext
 
-Ya está explicado en el anterior cápitulo
+Ya está explicado en el [anterior cápitulo](https://github.com/janumejia/Aprendiendo_React_JS/tree/main/4_context_api)
 
 ## useReducer
 
@@ -71,4 +71,4 @@ Está asociado con Redux.
 
 [Código Sandbox](https://codesandbox.io/s/aprendiendo-hooks-8nmg97)
 
-Documentación React: [https://es.reactjs.org/docs/hooks-reference.html](https://es.reactjs.org/docs/hooks-reference.html)
+[Documentación React](https://es.reactjs.org/docs/hooks-reference.html)
