@@ -46,10 +46,17 @@ import React, { useEffect, useState } from "react";
 export default function App() {
   const [count, setCount] = useState(0);
 
+  // Se ejecuta cada vez que se modifica el valor de count
   useEffect(() => {
     console.log(`count cambio a {count}`);
   }, [count]);
-
+  
+  // se ejecuta en el primer renderizado
+    useEffect(() => {
+    console.log(`count cambio a {count}`);
+  }, []);
+  
+  
   return (
     <div className="App">
       <h2>Sumar de uno en uno: {count}</h2>
@@ -69,7 +76,61 @@ Ya está explicado en el [anterior cápitulo](https://github.com/janumejia/Apren
 
 ## useReducer
 
-Está asociado con Redux.
+Está asociado con Redux y es muy similar a *useState*, pero en vez de actualizar el valor de la variable que esta guarda, en redux se hace una llamada a una **acción**, que luego va a llamar a un **Reducer** y el Reducer actualiza el estado en el **store**. **Pequeña defición de redux...**
+
+### Redux 
+
+Redux es una excelente herramienta para manejar el estado de una aplicación. Sus principales beneficios son:
+
+- Estado global e inmutable
+- Mayor control del estado de la aplicación y el flujo de datos
+- Arquitectura escalable de datos
+
+#### Conceptos:
+
+- El **Store** como la única fuente de la verdad
+- El **State** es de solo lectura
+- Los cambios al State pueden hacerse únicamente a través de acciones (**actions**) y funciones puras (**reducers**)
+- Un **reducer** describe como una acción transforma el estado.
+
+![image](https://user-images.githubusercontent.com/60657504/185007689-443d913a-dcc7-45ea-99b5-4049ceeb11e6.png)
+
+Código:
+
+```jsx
+import "./styles.css";
+import React, { useReducer } from "react";
+
+// Parte del redux
+const initialState = { count2: 0 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "increment":
+      return { count2: state.count2 + 1 };
+    case "decrement":
+      return { count2: state.count2 - 1 };
+    default:
+      throw new Error();
+  }
+}
+
+export default function App() {
+  // Para usar redux. El dispatch es como si fuera "setState"
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    <div className="App">
+      <h1>Count con Redux</h1>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      {state.count2}
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+    </div>
+  );
+}
+```
+
+![image](https://user-images.githubusercontent.com/60657504/185015108-7437050e-ddac-44ad-ae24-089274375478.png)
 
 [Código Sandbox](https://codesandbox.io/s/aprendiendo-hooks-8nmg97)
 
