@@ -35,7 +35,9 @@ export default function App() {
 
 ## useEffect
 
-useEffect es una función que toma otra función como parámetro y la ejecuta cuando se realiza el primer renderizado de la componente, cuando cambia el valor de una variables o cuando la aplicación se desmonte:
+useEffect es una función que toma otra función como parámetro y la ejecuta cuando se realiza el primer renderizado de la componente, cuando cambia el valor de una variables o cuando la aplicación se desmonte.
+
+Ejemplo de un useEffect que se ejecuta cada vez que hay cambios en la variable *count*:
 
 ```jsx
 import "./styles.css";
@@ -59,7 +61,7 @@ export default function App() {
 
 ![image](https://user-images.githubusercontent.com/60657504/184805479-84ff450d-346e-4aee-a032-17474004c587.png)
 
-*Nota:* Evitar poner un useState adentro de un useEfect, ya que se puede crear un loop infinito de renderizados.
+*Nota:* Tener cuidado cuando se agrega useState adentro de un useEfect, ya que se puede crear un loop infinito de renderizados.
 
 ## useContext
 
